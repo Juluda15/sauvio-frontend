@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sauvio | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h2>💼 Sauvio</h2>
+        </div>
+        <ul class="nav">
+            <li><a href="index.html" class="active"><span>🏠</span> Dashboard</a></li>
+            <li><a href="expenses.html"><span>💸</span> Expenses</a></li>
+            <li><a href="incomes.html"><span>💰</span> Incomes</a></li>
+            <li><a href="profile.html"><span>👤</span> Profile</a></li>
+        </ul>
+        <div class="logout">
+            <a href="login.html">🚪 Logout</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div>
+                <h1>Dashboard Overview</h1>
+                <p class="subtitle">Monitor your financial performance in real-time</p>
+            </div>
+            <div class="user-box">
+                <p>Hello, <span>User</span></p>
+                <div class="avatar">U</div>
+            </div>
+        </header>
+
+        <section class="dashboard-cards">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Total Balance</h3>
+                </div>
+                <p class="amount positive">€4,560</p>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>Total Income</h3>
+                </div>
+                <p class="amount positive">€7,200</p>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>Total Expenses</h3>
+                </div>
+                <p class="amount negative">€2,640</p>
+            </div>
+        </section>
+
+        <section class="recent-transactions">
+            <h2>Recent Transactions</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025-11-04</td>
+                            <td>Grocery Shopping</td>
+                            <td>Food</td>
+                            <td class="negative">-€45.60</td>
+                        </tr>
+                        <tr>
+                            <td>2025-11-03</td>
+                            <td>Freelance Project</td>
+                            <td>Income</td>
+                            <td class="positive">+€500.00</td>
+                        </tr>
+                        <tr>
+                            <td>2025-11-02</td>
+                            <td>Rent Payment</td>
+                            <td>Housing</td>
+                            <td class="negative">-€900.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
