@@ -26,11 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
             if (response.ok) {
                 alert("Login successful!");
                 console.log("User:", data);
-                // Example: store user info or token
                 localStorage.setItem("sauvioUser", JSON.stringify(data));
 
-                // redirect to dashboard
-                window.location.href = "dashboard.html";
+                window.location.href = "index.html";
             } else {
                 alert(data || "Invalid credentials or unconfirmed account.");
             }
