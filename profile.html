@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sauvio | Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h2>💼 Sauvio</h2>
+        </div>
+        <ul class="nav">
+            <li><a href="index.html">🏠 Dashboard</a></li>
+            <li><a href="expenses.html">💸 Expenses</a></li>
+            <li><a href="incomes.html">💰 Incomes</a></li>
+            <li><a href="profile.html" class="active">👤 Profile</a></li>
+        </ul>
+        <div class="logout">
+            <a href="login.html">🚪 Logout</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div>
+                <h1>User Profile</h1>
+                <p class="subtitle">View and update your account details</p>
+            </div>
+            <div class="user-box">
+                <p>Hello, <span>User</span></p>
+                <div class="avatar">U</div>
+            </div>
+        </header>
+
+        <section class="profile-section">
+            <div class="profile-card">
+                <div class="profile-avatar">U</div>
+                <h2>User Name</h2>
+                <p>Email: user@sauvio.com</p>
+                <p>Member since: January 2025</p>
+            </div>
+
+            <div class="update-section">
+                <h2>Update Information</h2>
+                <form class="form-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Change Password">
+                    <button type="submit">Save Changes</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

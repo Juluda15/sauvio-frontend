@@ -218,3 +218,91 @@ td.positive {
 td.negative {
     color: #f44336;
 }
+
+/* ======= Forms ======= */
+.form-section {
+    margin-top: 40px;
+}
+
+.form-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+.form-box {
+    display: flex;
+    gap: 15px;
+    background-color: #161616;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #2a2a2a;
+}
+
+.form-box input {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    background-color: #111;
+    color: #eee;
+}
+
+.form-box input:focus {
+    border-color: #00c896;
+    outline: none;
+}
+
+.form-box button {
+    background-color: #00c896;
+    color: #0f0f0f;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-box button:hover {
+    background-color: #00b688;
+}
+
+/* ======= Profile ======= */
+.profile-section {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.profile-card {
+    background-color: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+}
+
+.profile-avatar {
+    background-color: #00c896;
+    color: #0f0f0f;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.update-section {
+    flex: 1;
+}
+
+.update-section h2 {
+    margin-bottom: 15px;
+}
+

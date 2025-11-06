@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sauvio | Incomes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h2>💼 Sauvio</h2>
+        </div>
+        <ul class="nav">
+            <li><a href="index.html">🏠 Dashboard</a></li>
+            <li><a href="expenses.html">💸 Expenses</a></li>
+            <li><a href="incomes.html" class="active">💰 Incomes</a></li>
+            <li><a href="profile.html">👤 Profile</a></li>
+        </ul>
+        <div class="logout">
+            <a href="login.html">🚪 Logout</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div>
+                <h1>Manage Incomes</h1>
+                <p class="subtitle">Add and review your income sources</p>
+            </div>
+            <div class="user-box">
+                <p>Hello, <span>User</span></p>
+                <div class="avatar">U</div>
+            </div>
+        </header>
+
+        <section class="form-section">
+            <h2>Add New Income</h2>
+            <form class="form-box">
+                <input type="text" placeholder="Description" required>
+                <input type="number" placeholder="Amount (€)" required>
+                <input type="text" placeholder="Source (e.g. Job, Freelance)" required>
+                <button type="submit">Add Income</button>
+            </form>
+        </section>
+
+        <section class="recent-transactions">
+            <h2>All Incomes</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Source</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025-11-02</td>
+                            <td>Freelance Project</td>
+                            <td>Upwork</td>
+                            <td class="positive">+€500.00</td>
+                        </tr>
+                        <tr>
+                            <td>2025-10-28</td>
+                            <td>Monthly Salary</td>
+                            <td>Company</td>
+                            <td class="positive">+€2,300.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
