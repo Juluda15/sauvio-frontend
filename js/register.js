@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 body: JSON.stringify({ name, email, password })
             });
 
-            const data = await response.text(); // since your API returns a message string
+            const data = await response.text(); 
 
             if (response.ok) {
                 alert(data);
-                // redirect user to login
+
                 window.location.href = "login.html";
             } else {
                 alert(data || "Registration failed.");

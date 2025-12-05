@@ -15,22 +15,27 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             const response = await fetch("http://localhost:5163/api/account/login", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
+                headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email, password })
             });
 
-            const data = await response.json();
+            let data;
+
+            try {
+                data = await response.json();
+            } catch {
+                data = await response.text();
+            }
 
             if (response.ok) {
                 alert("Login successful!");
                 console.log("User:", data);
+
                 localStorage.setItem("sauvioUser", JSON.stringify(data));
 
                 window.location.href = "index.html";
             } else {
-                alert(data || "Invalid credentials or unconfirmed account.");
+                alert(data.error || data || "Invalid credentials or unconfirmed account.");
             }
         } catch (err) {
             console.error("Error:", err);

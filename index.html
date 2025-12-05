@@ -29,10 +29,11 @@
                 <h1>Dashboard Overview</h1>
                 <p class="subtitle">Monitor your financial performance in real-time</p>
             </div>
-            <div class="user-box">
-                <p>Hello, <span>User</span></p>
-                <div class="avatar">U</div>
-            </div>
+<div class="user-box">
+    <p id="user-greeting">Hello, User</p>
+    <div class="avatar" id="user-avatar">U</div>
+</div>
+
         </header>
 
         <section class="dashboard-cards">
@@ -40,21 +41,21 @@
                 <div class="card-header">
                     <h3>Total Balance</h3>
                 </div>
-                <p class="amount positive">€4,560</p>
+                <p class="amount positive"></p>
             </div>
 
             <div class="card">
                 <div class="card-header">
                     <h3>Total Income</h3>
                 </div>
-                <p class="amount positive">€7,200</p>
+                <p class="amount positive"></p>
             </div>
 
             <div class="card">
                 <div class="card-header">
                     <h3>Total Expenses</h3>
                 </div>
-                <p class="amount negative">€2,640</p>
+                <p class="amount negative"></p>
             </div>
         </section>
 
@@ -70,29 +71,14 @@
                             <th>Amount</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>2025-11-04</td>
-                            <td>Grocery Shopping</td>
-                            <td>Food</td>
-                            <td class="negative">-€45.60</td>
-                        </tr>
-                        <tr>
-                            <td>2025-11-03</td>
-                            <td>Freelance Project</td>
-                            <td>Income</td>
-                            <td class="positive">+€500.00</td>
-                        </tr>
-                        <tr>
-                            <td>2025-11-02</td>
-                            <td>Rent Payment</td>
-                            <td>Housing</td>
-                            <td class="negative">-€900.00</td>
-                        </tr>
-                    </tbody>
+                    <tbody id="index-table"></tbody>
                 </table>
             </div>
         </section>
     </div>
+    
+    <script src="js/dashboard.js" defer></script>
+    <script src="js/user-greeting.js" defer></script>
+
 </body>
 </html>

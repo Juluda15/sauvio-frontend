@@ -29,10 +29,11 @@
                 <h1>Manage Incomes</h1>
                 <p class="subtitle">Add and review your income sources</p>
             </div>
-            <div class="user-box">
-                <p>Hello, <span>User</span></p>
-                <div class="avatar">U</div>
-            </div>
+<div class="user-box">
+    <p id="user-greeting">Hello, User</p>
+    <div class="avatar" id="user-avatar">U</div>
+</div>
+
         </header>
 
         <section class="form-section">
@@ -57,23 +58,18 @@
                             <th>Amount</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>2025-11-02</td>
-                            <td>Freelance Project</td>
-                            <td>Upwork</td>
-                            <td class="positive">+€500.00</td>
-                        </tr>
-                        <tr>
-                            <td>2025-10-28</td>
-                            <td>Monthly Salary</td>
-                            <td>Company</td>
-                            <td class="positive">+€2,300.00</td>
-                        </tr>
-                    </tbody>
+
+                    <tbody id="income-table"></tbody>
+
                 </table>
             </div>
         </section>
     </div>
+    
+    <script src="js/incomes.js" defer></script>
+    <script src="js/user-greeting.js" defer></script>
+
+
+
 </body>
 </html>

@@ -29,10 +29,11 @@
                 <h1>Manage Expenses</h1>
                 <p class="subtitle">Track where your money goes</p>
             </div>
-            <div class="user-box">
-                <p>Hello, <span>User</span></p>
-                <div class="avatar">U</div>
-            </div>
+<div class="user-box">
+    <p id="user-greeting">Hello, User</p>
+    <div class="avatar" id="user-avatar">U</div>
+</div>
+
         </header>
 
         <section class="form-section">
@@ -57,23 +58,16 @@
                             <th>Amount</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>2025-11-03</td>
-                            <td>Electric Bill</td>
-                            <td>Utilities</td>
-                            <td class="negative">-€85.00</td>
-                        </tr>
-                        <tr>
-                            <td>2025-11-01</td>
-                            <td>Grocery Shopping</td>
-                            <td>Food</td>
-                            <td class="negative">-€56.90</td>
-                        </tr>
-                    </tbody>
+<tbody id="expense-table"></tbody>
+
                 </table>
             </div>
         </section>
     </div>
+
+    <script src="js/expenses.js" defer></script>
+    <script src="js/user-greeting.js" defer></script>
+
+
 </body>
 </html>
