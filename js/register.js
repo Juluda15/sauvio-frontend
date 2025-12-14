@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const email = form.querySelector('input[type="email"]').value.trim();
         const password = form.querySelector('input[type="password"]').value.trim();
 
-        if (!name || !email || !password) {
+        if (!name || !email || !password) 
+            {
             alert("Please fill in all fields.");
             return;
         }
