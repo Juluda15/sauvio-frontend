@@ -1,40 +1,32 @@
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector(".auth-form");
 
-    form.addEventListener("submit", async (e) => {
+    form.onsubmit = async e => {
         e.preventDefault();
 
-        const name = form.querySelector('input[type="text"]').value.trim();
-        const email = form.querySelector('input[type="email"]').value.trim();
-        const password = form.querySelector('input[type="password"]').value.trim();
+        const name = form[0].value.trim();
+        const email = form[1].value.trim();
+        const password = form[2].value.trim();
 
-        if (!name || !email || !password) 
-            {
-            alert("Please fill in all fields.");
+        if (!name || !email || !password) {
+            showToast("Please fill in all fields", "warning");
             return;
         }
 
         try {
-            const response = await fetch("http://localhost:5163/api/account/register", {
+            const res = await fetch("http://localhost:5163/api/account/register", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
+                headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ name, email, password })
             });
 
-            const data = await response.text(); 
+            const text = await res.text();
 
-            if (response.ok) {
-                alert(data);
-
-                window.location.href = "login.html";
-            } else {
-                alert(data || "Registration failed.");
-            }
-        } catch (err) {
-            console.error("Error:", err);
-            alert("Error connecting to the server.");
+            res.ok
+                ? (showToast(text, "success"), window.location.href = "login.html")
+                : showToast(text || "Registration failed", "error");
+        } catch {
+            showToast("Server connection error", "error");
         }
-    });
+    };
 });

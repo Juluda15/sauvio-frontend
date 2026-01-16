@@ -12,14 +12,9 @@
         <div class="logo">
             <h2>💼 Sauvio</h2>
         </div>
-        <ul class="nav">
-            <li><a href="index.html">🏠 Dashboard</a></li>
-            <li><a href="expenses.html">💸 Expenses</a></li>
-            <li><a href="incomes.html">💰 Incomes</a></li>
-            <li><a href="profile.html" class="active">👤 Profile</a></li>
-        </ul>
+        <ul class="nav" id="sidebar-links"></ul>
         <div class="logout">
-            <a href="login.html">🚪 Logout</a>
+            <a href="#" id="logoutBtn">🚪 Logout</a>
         </div>
     </div>
 
@@ -53,5 +48,8 @@
     </div>
 
     <script src="js/profile.js" defer></script>
+    <script src="js/user-greeting.js" defer></script>
+    <div id="toast-container"></div>
+    <script src="js/notification.js"></script>
 </body>
 </html>
