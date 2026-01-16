@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sauvio | Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h2>💼 Sauvio</h2>
+        </div>
+        <ul class="nav" id="sidebar-links"></ul>
+        <div class="logout">
+            <a href="#" id="logoutBtn">🚪 Logout</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div>
+                <h1>User Profile</h1>
+                <p class="subtitle">View and update your account details</p>
+            </div>
+            <div class="user-box">
+                <p id="user-greeting"></p>
+                <div class="avatar" id="user-avatar"></div>
+            </div>
+        </header>
+
+        <section class="profile-section">
+            <div class="profile-card">
+                <div class="profile-avatar" id="profile-avatar"></div>
+                <h2 id="profile-name"></h2>
+                <p>Email: <span id="profile-email"></span></p>
+            </div>
+
+            <div class="update-section">
+                <h2>Change Password</h2>
+                <form class="form-box" id="password-form">
+                    <input type="password" placeholder="New Password" id="new-password" required>
+                    <button type="submit">Save Password</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/profile.js" defer></script>
+    <script src="js/user-greeting.js" defer></script>
+    <div id="toast-container"></div>
+    <script src="js/notification.js"></script>
+</body>
+</html>

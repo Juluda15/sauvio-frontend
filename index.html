@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sauvio | Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"><h2>💼 Sauvio</h2></div>
+<ul class="nav">
+    <li><a href="#" id="link-dashboard" class="active">🏠 Dashboard</a></li>
+    <li><a href="expenses.html">💸 Expenses</a></li>
+    <li><a href="incomes.html">💰 Incomes</a></li>
+    <li id="users-link" style="display:none;"><a href="#" id="link-users">👥 Users</a></li>
+    <li><a href="profile.html">👤 Profile</a></li>
+</ul>
+        <div class="logout"><a href="#" id="logoutBtn">🚪 Logout</a></div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div>
+                <h1 id="page-title">Dashboard Overview</h1>
+                <p class="subtitle" id="page-subtitle">Monitor your financial performance in real-time</p>
+            </div>
+            <div class="user-box">
+                <p id="user-greeting">Hello, User</p>
+                <div class="avatar" id="user-avatar">U</div>
+            </div>
+        </header>
+
+        <section id="user-dashboard">
+            <section class="dashboard-cards">
+                <div class="card">
+                    <div class="card-header"><h3>Total Balance</h3></div>
+                    <p class="amount positive" id="total-balance"></p>
+                </div>
+                <div class="card">
+                    <div class="card-header"><h3>Total Income</h3></div>
+                    <p class="amount positive" id="total-income"></p>
+                </div>
+                <div class="card">
+                    <div class="card-header"><h3>Total Expenses</h3></div>
+                    <p class="amount negative" id="total-expense"></p>
+                </div>
+            </section>
+
+            <section class="recent-transactions">
+                <h2>Recent Transactions</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Description</th>
+                                <th>Category</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody id="recent-transactions"></tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+
+        <section id="admin-dashboard" style="display:none;">
+            <section id="users-container" class="users-container"></section>
+        </section>
+    </div>
+
+    <script src="js/merged-dashboard.js" defer></script>
+    <script src="js/user-greeting.js" defer></script>
+    <div id="toast-container"></div>
+    <script src="js/notification.js"></script>
+</body>
+</html>

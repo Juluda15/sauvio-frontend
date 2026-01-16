@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sauvio | Users</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="logo"><h2>💼 Sauvio</h2></div>
+        <ul class="nav" id="sidebar-links"></ul>
+    <div class="logout"><a href="#" id="logoutBtn">🚪 Logout</a></div>
+</div>
+
+<div class="main-content">
+    <header>
+        <div>
+            <h1>Users Overview</h1>
+            <p class="subtitle">Manage all users and monitor their balances</p>
+        </div>
+        <div class="user-box">
+            <span id="admin-name">Admin</span>
+            <div class="avatar">A</div>
+        </div>
+    </header>
+
+    <section id="users-container" class="users-container">
+    </section>
+</div>
+
+<div id="toast-container"></div>
+<script src="js/notification.js"></script>
+<script src="js/merged-dashboard.js" defer></script>
+<script src="js/user-greeting.js" defer></script>
+</body>
+</html>
